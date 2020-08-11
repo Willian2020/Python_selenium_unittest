@@ -1,0 +1,16 @@
+1.需安装导入的模块：
+  htmlreport 、pyHook 、pyuserinput 、pywin32 、 selenium 、xlrd 、xlwt 、HTMLTestRunner
+
+2.浏览器驱动
+需下载对应版本谷歌浏览器驱动放在python安装根目录下和谷歌安装目录下
+
+3.环境变量
+将Python安装目录、Python安装目录下的Scripts文件路径、谷歌浏览器驱动文件路径添加至系统path环境变量中
+
+4.框架脚本配置
+Config/config.ini文件：修改project_path的值为框架主路径，如project_path=E:\AutoTest_WIZData
+Config/globalparam.py文件：修改默认浏览器类型browserType的值为Chrome或IE
+Package/publicfunction.py文件：修改Mytest类setUp方法中代码：options.add_argument('--user-data-dir=C:/Users/Administrator/User Data')中的谷歌用户配置信息文件路径
+run.py文件：修改代码title='WizData项目测试报告'中的项目名称为实际项目名称
+
+
